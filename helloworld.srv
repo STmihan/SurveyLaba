@@ -1,0 +1,29 @@
+﻿# Hello World
+
+name: Hello World
+start: 1
+
+question: 1; What is your favorite color?
+# This 3 answers will jump to question 2
+answer: 1; Red; 2
+answer: 2; Blue; 2
+answer: 3; Green; 2
+# This answer will jump to question 3
+answer: 4; Yellow; 3
+question: 2; What is your favorite animal?
+answer: 1; Dog; 3
+answer: 2; Cat; 3
+answer: 3; Bird; 3
+# This answer will jump to end 1101
+answer: 4; Fish; 1101
+question: 3; What is your favorite food?
+# This 2 answers will jump to end 1102
+answer: 1; Pizza; 1102
+answer: 2; Pasta; 1102
+# This 2 answers will jump to end 1103
+answer: 3; Salad; 1103
+answer: 4; Soup; 1103
+
+end: 1101; You like fish!
+end: 1102; End number 2
+end: 1103; End number 3
