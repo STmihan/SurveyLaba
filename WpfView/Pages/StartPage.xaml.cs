@@ -1,24 +1,22 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using Domain;
 
-namespace WpfView;
+namespace WpfView.pages;
 
-public partial class StartSurveyWindow
+public partial class StartPage
 {
     private readonly Survey _survey;
-
-    public StartSurveyWindow(Survey survey)
+    
+    public StartPage(Survey survey)
     {
         _survey = survey;
         InitializeComponent();
         SurveyName.Text = _survey.Name;
-        
     }
-
+    
     private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
     {
-        SurveyWindow surveyWindow = new(_survey);
-        surveyWindow.Show();
-        Close();
+        Console.WriteLine(_survey);
     }
 }
